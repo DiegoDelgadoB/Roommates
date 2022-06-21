@@ -8,6 +8,7 @@ const getUsers = async () => {
         const { response } = await axios.get("https://randomuser.me/api/");
         const user = response.results[0];
         
+        
         let codigo = uuid().slice(0, 8);
         let roommate = {
             id: codigo,
